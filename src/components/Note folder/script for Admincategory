@@ -1,0 +1,162 @@
+<script>
+import axios from "axios";
+import Swal from "sweetalert2";
+
+export default {
+  props: ["categories"],
+  data() {
+    return {
+      newSubcategory: {
+        name: "",
+        categoryId: "",
+      },
+      subcategories: [],
+      editSubcategory: {
+        id: "",
+        name: "",
+        categoryId: "",
+      },
+    };
+  },
+  methods: {
+    async fetchData() {
+      try {
+        const res = await axios.get(
+          `http://localhost:3000/subcategories?categoryId=Category1719162574287`
+        );
+        this.subcategories = res.data;
+        console.log(`Fetched subcategories: ${this.subcategories}`);
+      } catch (err) {
+        console.error(`Error fetching data: ${err}`);
+      }
+    },
+    async SubcategoryForm() {
+      const subcategoryId = `subcategory${Date.now()}`;
+
+      try {
+        const newSubcategory = {
+          id: subcategoryId,
+          name: this.newSubcategory.name,
+          categoryId: this.newSubcategory.categoryId,
+          route: `/admin/subcategory/${this.newSubcategory.name
+            .toLowerCase()
+            .replace(/\s+/g, "-")}`,
+        };
+
+        await axios.post("http://localhost:3000/subcategories", newSubcategory);
+
+        //update
+        const category = this.categories.find(
+          (category) => category.id === this.newSubcategory.categoryId
+        );
+
+        if (category) {
+          if (!category.subcategories) {
+            category.subcategories = [];
+          }
+          category.subcategories.push(newSubcategory);
+
+          // Update the category in the database
+          await axios
+            .patch(`http://localhost:3000/categories/${category.id}`, {
+              subcategories: category.subcategories,
+            })
+            .then(() => {
+              // Reload the page or update the product list as needed
+              location.reload();
+
+              // reset
+              this.newSubcategory = {
+                name: "",
+                categoryId: "",
+              };
+            });
+          Swal.fire({
+            icon: "success",
+            title: "Success",
+            text: "Subcategory added successfully!",
+          });
+        }
+      } catch (error) {
+        console.error("Error adding subcategory:", error);
+        Swal.fire({
+          icon: "error",
+          title: "Error",
+          text: "An error occurred while adding the subcategory.",
+        });
+      }
+    },
+    setEditSubcategory(id, name, categoryId) {
+      this.editSubcategory.id = id;
+      this.editSubcategory.name = name;
+      this.editSubcategory.categoryId = categoryId;
+    },
+    async EditSubcategoryForm(id) {
+      try {
+        const updatedSubcategory = {
+          id,
+          name: this.editSubcategory.name,
+          categoryId: this.editSubcategory.categoryId,
+        };
+
+        await axios.patch(
+          `http://localhost:3000/subcategories/${id}`,
+          updatedSubcategory
+        );
+
+        // Update the subcategory in the category
+        const oldCategory = this.categories.find((category) =>
+          category.subcategories.some((subcategory) => subcategory.id === id)
+        );
+
+        if (oldCategory) {
+          oldCategory.subcategories = oldCategory.subcategories.filter(
+            (subcategory) => subcategory.id !== id
+          );
+          await axios.patch(
+            `http://localhost:3000/categories/${oldCategory.id}`,
+            {
+              subcategories: oldCategory.subcategories,
+            }
+          );
+        }
+
+        const newCategory = this.categories.find(
+          (category) => category.id === this.editSubcategory.categoryId
+        );
+
+        if (newCategory) {
+          if (!newCategory.subcategories) {
+            newCategory.subcategories = [];
+          }
+          newCategory.subcategories.push(updatedSubcategory);
+          await axios.patch(
+            `http://localhost:3000/categories/${newCategory.id}`,
+            {
+              subcategories: newCategory.subcategories,
+            }
+          );
+        }
+
+        this.fetchData();
+
+        Swal.fire({
+          icon: "success",
+          title: "Success",
+          text: "Subcategory updated successfully!",
+        });
+      } catch (error) {
+        console.error("Error updating subcategory:", error);
+        Swal.fire({
+          icon: "error",
+          title: "Error",
+          text: "An error occurred while updating the subcategory.",
+        });
+      }
+    },
+  },
+  mounted() {
+    this.fetchData();
+  },
+};
+</script>

@@ -1,0 +1,324 @@
+{
+  "categories": [
+    {
+      "id": "Category1719162574287",
+      "name": "Electronics boy",
+      "route": "/admin/category/women",
+      "subcategories": [
+        {
+          "id": "subcategory17191625742871",
+          "name": "Mobile Phones",
+          "products": [
+            {
+              "id": 1,
+              "name": "iPhone 13",
+              "price": 999.99,
+              "reviews": [
+                {
+                  "user": "user1",
+                  "rating": 5,
+                  "comment": "Great phone!"
+                },
+                {
+                  "user": "user2",
+                  "rating": 4,
+                  "comment": "Good but expensive."
+                }
+              ],
+              "discount": 10,
+              "status": "available"
+            },
+            {
+              "id": 2,
+              "name": "Samsung Galaxy S21",
+              "price": 899.99,
+              "reviews": [
+                {
+                  "user": "user3",
+                  "rating": 4,
+                  "comment": "Very good phone."
+                }
+              ],
+              "discount": 5,
+              "status": "sold out"
+            }
+          ]
+        },
+        {
+          "id": "subcategory17191625742872",
+          "name": "Laptops",
+          "products": [
+            {
+              "id": 3,
+              "name": "MacBook Pro",
+              "price": 1299.99,
+              "reviews": [
+                {
+                  "user": "user4",
+                  "rating": 5,
+                  "comment": "Amazing performance!"
+                }
+              ],
+              "discount": 15,
+              "status": "available"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Category1719162584975",
+      "name": "Fashion house",
+      "route": "/admin/category/fashion",
+      "subcategories": [
+        {
+          "id": "subcategory17191625849751",
+          "name": "Men's Clothing",
+          "products": [
+            {
+              "id": 4,
+              "name": "T-shirt",
+              "price": 19.99,
+              "reviews": [],
+              "discount": 0,
+              "status": "available"
+            }
+          ]
+        },
+        {
+          "id": "subcategory17191625849752",
+          "name": "Women's Clothing",
+          "products": [
+            {
+              "id": 5,
+              "name": "Dress",
+              "price": 49.99,
+              "reviews": [
+                {
+                  "user": "user5",
+                  "rating": 4,
+                  "comment": "Beautiful dress!"
+                }
+              ],
+              "discount": 10,
+              "status": "available"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Category1719131472860",
+      "name": "Home & Kitchen",
+      "route": "/admin/category/home&kitchen",
+      "subcategories": [
+        {
+          "id": "subcategory17191314728601",
+          "name": "Furniture",
+          "products": [
+            {
+              "id": 6,
+              "name": "Sofa",
+              "price": 499.99,
+              "reviews": [
+                {
+                  "user": "user6",
+                  "rating": 5,
+                  "comment": "Very comfortable!"
+                }
+              ],
+              "discount": 20,
+              "status": "available"
+            }
+          ]
+        },
+        {
+          "id": "subcategory17191314728602",
+          "name": "Kitchen Appliances",
+          "products": [
+            {
+              "id": 7,
+              "name": "Blender",
+              "price": 29.99,
+              "reviews": [],
+              "discount": 0,
+              "status": "available"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "subcategories": [
+    {
+      "id": "subcategory17191625742871",
+      "name": "Mobile Phones",
+      "categoryId": "Category1719162574287",
+      "products": [
+        {
+          "id": 1,
+          "name": "iPhone 13",
+          "price": 999.99,
+          "reviews": [
+            {
+              "user": "user1",
+              "rating": 5,
+              "comment": "Great phone!"
+            },
+            {
+              "user": "user2",
+              "rating": 4,
+              "comment": "Good but expensive."
+            }
+          ],
+          "discount": 10,
+          "status": "available"
+        },
+        {
+          "id": 2,
+          "name": "Samsung Galaxy S21",
+          "price": 899.99,
+          "reviews": [
+            {
+              "user": "user3",
+              "rating": 4,
+              "comment": "Very good phone."
+            }
+          ],
+          "discount": 5,
+          "status": "sold out"
+        }
+      ]
+    },
+    {
+      "id": "subcategory17191625742872",
+      "name": "Laptops",
+      "categoryId": "Category1719162574287",
+      "products": [
+        {
+          "id": 3,
+          "name": "MacBook Pro",
+          "price": 1299.99,
+          "reviews": [
+            {
+              "user": "user4",
+              "rating": 5,
+              "comment": "Amazing performance!"
+            }
+          ],
+          "discount": 15,
+          "status": "available"
+        }
+      ]
+    },
+    {
+      "id": "subcategory17191625849751",
+      "name": "Men's Clothing",
+      "categoryId": "Category1719162584975",
+      "products": [
+        {
+          "id": 4,
+          "name": "T-shirt",
+          "price": 19.99,
+          "reviews": [],
+          "discount": 0,
+          "status": "available"
+        }
+      ]
+    },
+    {
+      "id": "subcategory17191625849752",
+      "name": "Women's Clothing",
+      "categoryId": "Category1719162584975",
+      "products": [
+        {
+          "id": 5,
+          "name": "Dress",
+          "price": 49.99,
+          "reviews": [
+            {
+              "user": "user5",
+              "rating": 4,
+              "comment": "Beautiful dress!"
+            }
+          ],
+          "discount": 10,
+          "status": "available"
+        }
+      ]
+    },
+    {
+      "id": "subcategory17191314728601",
+      "name": "Furniture",
+      "categoryId": "Category1719131472860",
+      "products": [
+        {
+          "id": 6,
+          "name": "Sofa",
+          "price": 499.99,
+          "reviews": [
+            {
+              "user": "user6",
+              "rating": 5,
+              "comment": "Very comfortable!"
+            }
+          ],
+          "discount": 20,
+          "status": "available"
+        }
+      ]
+    },
+    {
+      "id": "subcategory17191314728602",
+      "name": "Kitchen Appliances",
+      "categoryId": "Category1719131472860",
+      "products": [
+        {
+          "id": 7,
+          "name": "Blender",
+          "price": 29.99,
+          "reviews": [],
+          "discount": 0,
+          "status": "available"
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "iPhone 13",
+      "price": 999.99,
+      "reviews": [
+        {
+          "user": "user1",
+          "rating": 5,
+          "comment": "Great phone!"
+        },
+        {
+          "user": "user2",
+          "rating": 4,
+          "comment": "Good but expensive."
+        }
+      ],
+      "discount": 10,
+      "status": "available"
+    },
+    {
+      "id": "2",
+      "name": "Samsung Galaxy S21",
+      "price": 899.99,
+      "reviews": [
+        {
+          "user": "user3",
+          "rating": 4,
+          "comment": "Very good phone."
+        }
+      ],
+      "discount": 5,
+      "status": "sold out"
+    }
+  ],
+  "disableCategories": [],
+  "disableSubcategories": []
+}

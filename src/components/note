@@ -1,0 +1,125 @@
+<template>
+  <div class="table-responsive mb-5">
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Product Name</th>
+          <th scope="col">Product No</th>
+          <th scope="col">Disable</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        <!-- Loop through categories -->
+        <template v-for="category in categories" :key="category.id">
+          <!-- Loop through product categories within each category -->
+          <template
+            v-for="productCategory in category.products"
+            :key="productCategory.id"
+          >
+            <!-- Loop through products within each product category -->
+            <template
+              v-for="product in productCategory.products"
+              :key="product.id"
+            >
+              <tr>
+                <th scope="row">{{ product.id }}</th>
+                <td>
+                  <router-link
+                    :to="`/admin/category${product.link}`"
+                    class="text-decoration-none"
+                  >
+                    {{ product.name }}
+                  </router-link>
+                </td>
+                <td>{{ product.id }}</td>
+                <td>
+                  <button
+                    @click="disableProduct(product)"
+                    class="btn btn-danger btn-sm"
+                    style="background: #ff5b5a"
+                  >
+                    Disable
+                  </button>
+                </td>
+              </tr>
+            </template>
+          </template>
+        </template>
+      </tbody>
+    </table>
+  </div>
+</template>
+
+<script>
+  import Swal from "sweetalert2";
+
+  export default {
+    props: {
+      categories: {
+        type: Array,
+        required: true,
+      },
+    },
+    methods: {
+      async disableProduct(product) {
+        try {
+          // Ideally, you would make an API call to disable the product
+          // For now, let's assume a successful operation
+          console.log("Disabling product:", product);
+
+          // Simulate a successful operation with a Swal notification
+          Swal.fire({
+            icon: "success",
+            title: "Success",
+            text: "Product disabled successfully!",
+          });
+
+          // Optional: Reload the page or update the product list
+          // location.reload();
+        } catch (error) {
+          console.error("Error disabling product:", error);
+          Swal.fire({
+            icon: "error",
+            title: "Error",
+            text: "Failed to disable product. Please try again later.",
+          });
+        }
+      },
+    },
+  };
+</script>
+
+<style scoped>
+  .table-responsive {
+    overflow-x: auto;
+  }
+
+  .table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: #a79ffd3b;
+  }
+
+  .table-striped > tbody > tr:hover th,
+  .table-striped > tbody > tr:hover td {
+    background-color: #6b5ef0;
+    color: #fff;
+  }
+
+  .table-striped > tbody > tr:hover {
+    color: #fff;
+    background-color: #6b5ef0;
+  }
+
+  .disabled-row {
+    text-decoration: line-through;
+    color: gray;
+  }
+
+  #link {
+    transition: color 0.3s ease;
+  }
+
+  #link:hover {
+    color: yellow;
+  }
+</style>

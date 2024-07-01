@@ -1,0 +1,749 @@
+{
+  "categories": [],
+  "subcategories": [],
+  "products": [],
+  "disableCategories": [],
+  "disableSubcategories": [],
+  "allCategories": [
+    {
+      "id": "1",
+      "name": "Women",
+      "subcategories": [
+        {
+          "id": "sub1",
+          "name": "Women's Clothing",
+          "categoryId": "1",
+          "products": [
+            {
+              "id": "prod1",
+              "name": "Summer Dress",
+              "price": 29.99,
+              "description": "Light and breezy summer dress perfect for hot weather."
+            },
+            {
+              "id": "prod2",
+              "name": "Winter Coat",
+              "price": 79.99,
+              "description": "Warm and stylish coat for the winter season."
+            },
+            {
+              "id": "prod3",
+              "name": "Casual Blouse",
+              "price": 19.99,
+              "description": "Comfortable and chic blouse for casual outings."
+            }
+          ]
+        },
+        {
+          "id": "sub2",
+          "name": "T-Shirts and Tops",
+          "categoryId": "1",
+          "products": [
+            {
+              "id": "prod4",
+              "name": "Graphic T-Shirt",
+              "price": 14.99,
+              "description": "Trendy graphic tee with unique designs."
+            },
+            {
+              "id": "prod5",
+              "name": "Tank Top",
+              "price": 9.99,
+              "description": "Simple and versatile tank top for everyday wear."
+            },
+            {
+              "id": "prod6",
+              "name": "V-Neck Tee",
+              "price": 12.99,
+              "description": "Classic V-neck t-shirt for a casual look."
+            }
+          ]
+        },
+        {
+          "id": "sub3",
+          "name": "Dresses",
+          "categoryId": "1",
+          "products": [
+            {
+              "id": "prod7",
+              "name": "Evening Gown",
+              "price": 99.99,
+              "description": "Elegant evening gown for special occasions."
+            },
+            {
+              "id": "prod8",
+              "name": "Casual Dress",
+              "price": 39.99,
+              "description": "Comfortable and stylish dress for casual outings."
+            },
+            {
+              "id": "prod9",
+              "name": "Cocktail Dress",
+              "price": 59.99,
+              "description": "Chic cocktail dress for parties and events."
+            }
+          ]
+        },
+        {
+          "id": "sub4",
+          "name": "Outerwear",
+          "categoryId": "1",
+          "products": [
+            {
+              "id": "prod10",
+              "name": "Leather Jacket",
+              "price": 89.99,
+              "description": "Classic leather jacket for a cool, edgy look."
+            },
+            {
+              "id": "prod11",
+              "name": "Denim Jacket",
+              "price": 49.99,
+              "description": "Versatile denim jacket for all seasons."
+            },
+            {
+              "id": "prod12",
+              "name": "Raincoat",
+              "price": 39.99,
+              "description": "Waterproof raincoat to keep you dry."
+            }
+          ]
+        },
+        {
+          "id": "sub5",
+          "name": "Formal Wear",
+          "categoryId": "1",
+          "products": [
+            {
+              "id": "prod13",
+              "name": "Business Suit",
+              "price": 199.99,
+              "description": "Professional business suit for work."
+            },
+            {
+              "id": "prod14",
+              "name": "Formal Skirt",
+              "price": 49.99,
+              "description": "Elegant skirt for formal occasions."
+            },
+            {
+              "id": "prod15",
+              "name": "Blazer",
+              "price": 79.99,
+              "description": "Stylish blazer to complete your formal look."
+            }
+          ]
+        },
+        {
+          "id": "sub6",
+          "name": "Casual Wear",
+          "categoryId": "1",
+          "products": [
+            {
+              "id": "prod16",
+              "name": "Jeans",
+              "price": 39.99,
+              "description": "Comfortable jeans for everyday wear."
+            },
+            {
+              "id": "prod17",
+              "name": "Hoodie",
+              "price": 29.99,
+              "description": "Cozy hoodie for a casual look."
+            },
+            {
+              "id": "prod18",
+              "name": "Leggings",
+              "price": 19.99,
+              "description": "Versatile leggings for lounging or working out."
+            }
+          ]
+        },
+        {
+          "id": "sub7",
+          "name": "Seasonal Collections",
+          "categoryId": "1",
+          "products": [
+            {
+              "id": "prod19",
+              "name": "Summer Collection",
+              "price": 59.99,
+              "description": "Seasonal summer collection with the latest trends."
+            },
+            {
+              "id": "prod20",
+              "name": "Winter Collection",
+              "price": 79.99,
+              "description": "Warm and stylish winter collection."
+            },
+            {
+              "id": "prod21",
+              "name": "Spring Collection",
+              "price": 69.99,
+              "description": "Fresh and vibrant spring collection."
+            }
+          ]
+        },
+        {
+          "id": "sub8",
+          "name": "Sports Bras",
+          "categoryId": "1",
+          "products": [
+            {
+              "id": "prod22",
+              "name": "High-Impact Sports Bra",
+              "price": 29.99,
+              "description": "Supportive sports bra for high-impact activities."
+            },
+            {
+              "id": "prod23",
+              "name": "Medium-Impact Sports Bra",
+              "price": 24.99,
+              "description": "Comfortable bra for medium-impact workouts."
+            },
+            {
+              "id": "prod24",
+              "name": "Low-Impact Sports Bra",
+              "price": 19.99,
+              "description": "Lightweight bra for low-impact exercises."
+            }
+          ]
+        },
+        {
+          "id": "sub9",
+          "name": "Workout Tops",
+          "categoryId": "1",
+          "products": [
+            {
+              "id": "prod25",
+              "name": "Running Tank",
+              "price": 19.99,
+              "description": "Breathable tank top for running."
+            },
+            {
+              "id": "prod26",
+              "name": "Yoga Top",
+              "price": 24.99,
+              "description": "Flexible top for yoga sessions."
+            },
+            {
+              "id": "prod27",
+              "name": "Gym Tee",
+              "price": 14.99,
+              "description": "Comfortable tee for gym workouts."
+            }
+          ]
+        },
+        {
+          "id": "sub10",
+          "name": "Fall Wardrobe",
+          "categoryId": "1",
+          "products": [
+            {
+              "id": "prod28",
+              "name": "Sweater",
+              "price": 29.99,
+              "description": "Warm sweater for the fall season."
+            },
+            {
+              "id": "prod29",
+              "name": "Scarf",
+              "price": 14.99,
+              "description": "Cozy scarf to keep you warm."
+            },
+            {
+              "id": "prod30",
+              "name": "Beanie",
+              "price": 9.99,
+              "description": "Stylish beanie for cool weather."
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "2",
+      "name": "Male",
+      "subcategories": [
+        {
+          "id": "sub11",
+          "name": "Men's Clothing",
+          "categoryId": "2",
+          "products": [
+            {
+              "id": "prod111",
+              "name": "Classic Fit Shirt",
+              "price": 39.99,
+              "description": "A classic fit shirt made from high-quality cotton for everyday wear."
+            },
+            {
+              "id": "prod112",
+              "name": "Slim Fit Jeans",
+              "price": 49.99,
+              "description": "Stylish slim fit jeans with a modern look and comfortable feel."
+            },
+            {
+              "id": "prod113",
+              "name": "Casual Hoodie",
+              "price": 59.99,
+              "description": "A comfortable and stylish hoodie for casual outings."
+            }
+          ]
+        },
+        {
+          "id": "sub12",
+          "name": "T-Shirts and Tops",
+          "categoryId": "2",
+          "products": [
+            {
+              "id": "prod121",
+              "name": "Graphic Tee",
+              "price": 19.99,
+              "description": "A cool graphic tee with unique designs."
+            },
+            {
+              "id": "prod122",
+              "name": "V-Neck T-Shirt",
+              "price": 14.99,
+              "description": "A soft V-neck t-shirt available in multiple colors."
+            },
+            {
+              "id": "prod123",
+              "name": "Polo Shirt",
+              "price": 29.99,
+              "description": "A classic polo shirt suitable for both casual and semi-formal occasions."
+            }
+          ]
+        },
+        {
+          "id": "sub13",
+          "name": "Pants",
+          "categoryId": "2",
+          "products": [
+            {
+              "id": "prod131",
+              "name": "Chinos",
+              "price": 34.99,
+              "description": "Versatile chinos perfect for both work and leisure."
+            },
+            {
+              "id": "prod132",
+              "name": "Cargo Pants",
+              "price": 44.99,
+              "description": "Durable cargo pants with multiple pockets for extra storage."
+            },
+            {
+              "id": "prod133",
+              "name": "Joggers",
+              "price": 29.99,
+              "description": "Comfortable joggers for workouts or casual wear."
+            }
+          ]
+        },
+        {
+          "id": "sub14",
+          "name": "Outerwear",
+          "categoryId": "2",
+          "products": [
+            {
+              "id": "prod141",
+              "name": "Denim Jacket",
+              "price": 69.99,
+              "description": "A stylish denim jacket that never goes out of fashion."
+            },
+            {
+              "id": "prod142",
+              "name": "Bomber Jacket",
+              "price": 79.99,
+              "description": "A sleek bomber jacket with a modern fit."
+            },
+            {
+              "id": "prod143",
+              "name": "Windbreaker",
+              "price": 49.99,
+              "description": "Lightweight windbreaker perfect for windy and rainy days."
+            },
+            {
+              "id": "prod144",
+              "name": "Peacoat",
+              "price": 99.99,
+              "description": "A classic peacoat with a sophisticated look."
+            }
+          ]
+        },
+        {
+          "id": "sub15",
+          "name": "Formal Wear",
+          "categoryId": "2",
+          "products": [
+            {
+              "id": "prod151",
+              "name": "Business Suit",
+              "price": 199.99,
+              "description": "A sharp business suit for professional settings."
+            },
+            {
+              "id": "prod152",
+              "name": "Dress Shirt",
+              "price": 49.99,
+              "description": "A crisp dress shirt for formal occasions."
+            },
+            {
+              "id": "prod153",
+              "name": "Formal Trousers",
+              "price": 59.99,
+              "description": "Elegant formal trousers with a perfect fit."
+            },
+            {
+              "id": "prod154",
+              "name": "Tuxedo",
+              "price": 299.99,
+              "description": "A classic tuxedo for special events."
+            }
+          ]
+        },
+        {
+          "id": "sub16",
+          "name": "Casual Wear",
+          "categoryId": "2",
+          "products": [
+            {
+              "id": "prod161",
+              "name": "Casual Shirt",
+              "price": 29.99,
+              "description": "A comfortable casual shirt for everyday wear."
+            },
+            {
+              "id": "prod162",
+              "name": "Casual Shorts",
+              "price": 24.99,
+              "description": "Relaxed fit shorts for warm weather."
+            },
+            {
+              "id": "prod163",
+              "name": "Sweatshirt",
+              "price": 34.99,
+              "description": "A cozy sweatshirt for lounging or casual outings."
+            }
+          ]
+        },
+        {
+          "id": "sub17",
+          "name": "Seasonal Collections",
+          "categoryId": "2",
+          "products": [
+            {
+              "id": "prod171",
+              "name": "Winter Coat",
+              "price": 149.99,
+              "description": "A warm and stylish winter coat for cold weather."
+            },
+            {
+              "id": "prod172",
+              "name": "Summer Shorts",
+              "price": 19.99,
+              "description": "Lightweight shorts perfect for summer days."
+            },
+            {
+              "id": "prod173",
+              "name": "Spring Jacket",
+              "price": 59.99,
+              "description": "A light jacket for the spring season."
+            }
+          ]
+        },
+        {
+          "id": "sub18",
+          "name": "Sports Apparel",
+          "categoryId": "2",
+          "products": [
+            {
+              "id": "prod181",
+              "name": "Running Shorts",
+              "price": 24.99,
+              "description": "Comfortable running shorts with moisture-wicking fabric."
+            },
+            {
+              "id": "prod182",
+              "name": "Workout T-Shirt",
+              "price": 19.99,
+              "description": "A breathable workout t-shirt for active wear."
+            },
+            {
+              "id": "prod183",
+              "name": "Track Jacket",
+              "price": 39.99,
+              "description": "A lightweight track jacket for outdoor activities."
+            },
+            {
+              "id": "prod184",
+              "name": "Yoga Pants",
+              "price": 29.99,
+              "description": "Flexible and comfortable yoga pants for all activities."
+            },
+            {
+              "id": "prod185",
+              "name": "Basketball Jersey",
+              "price": 34.99,
+              "description": "A cool basketball jersey for sports enthusiasts."
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "3",
+      "name": "Mother-Child",
+      "subcategories": [
+        {
+          "id": "sub19",
+          "name": "Maternity Wear",
+          "categoryId": "3",
+          "products": [
+            {
+              "id": "prod1",
+              "name": "Maternity Dress",
+              "price": 45.99,
+              "description": "Comfortable and stylish maternity dress perfect for all stages of pregnancy."
+            },
+            {
+              "id": "prod2",
+              "name": "Maternity Leggings",
+              "price": 29.99,
+              "description": "Stretchy and supportive leggings for expecting mothers."
+            },
+            {
+              "id": "prod3",
+              "name": "Maternity Top",
+              "price": 34.99,
+              "description": "Soft and breathable maternity top with a flattering fit."
+            }
+          ]
+        },
+        {
+          "id": "sub20",
+          "name": "Children's Clothing",
+          "categoryId": "3",
+          "products": [
+            {
+              "id": "prod4",
+              "name": "Kids' T-Shirt",
+              "price": 15.99,
+              "description": "Colorful and fun t-shirt for kids."
+            },
+            {
+              "id": "prod5",
+              "name": "Children's Jeans",
+              "price": 25.99,
+              "description": "Durable and stylish jeans for children."
+            },
+            {
+              "id": "prod6",
+              "name": "Kids' Jacket",
+              "price": 40.0,
+              "description": "Warm and cozy jacket for kids."
+            },
+            {
+              "id": "prod7",
+              "name": "Children's Pajamas",
+              "price": 20.99,
+              "description": "Soft and comfortable pajamas for children."
+            },
+            {
+              "id": "prod8",
+              "name": "Kids' Sneakers",
+              "price": 35.99,
+              "description": "Durable and trendy sneakers for kids."
+            }
+          ]
+        },
+        {
+          "id": "sub21",
+          "name": "Baby Accessories",
+          "categoryId": "3",
+          "products": [
+            {
+              "id": "prod9",
+              "name": "Baby Bibs",
+              "price": 12.99,
+              "description": "Set of soft and absorbent baby bibs."
+            },
+            {
+              "id": "prod10",
+              "name": "Baby Blankets",
+              "price": 19.99,
+              "description": "Cozy and warm baby blankets."
+            },
+            {
+              "id": "prod11",
+              "name": "Baby Bottles",
+              "price": 14.99,
+              "description": "Set of BPA-free baby bottles."
+            },
+            {
+              "id": "prod12",
+              "name": "Baby Toys",
+              "price": 24.99,
+              "description": "Assorted educational toys for babies."
+            }
+          ]
+        },
+        {
+          "id": "sub22",
+          "name": "Family Matching Outfits",
+          "categoryId": "3",
+          "products": [
+            {
+              "id": "prod13",
+              "name": "Matching Family T-Shirts",
+              "price": 50.0,
+              "description": "Set of matching t-shirts for the whole family."
+            },
+            {
+              "id": "prod14",
+              "name": "Matching Family Pajamas",
+              "price": 65.99,
+              "description": "Cozy and fun matching pajamas for the family."
+            },
+            {
+              "id": "prod15",
+              "name": "Matching Family Hoodies",
+              "price": 80.0,
+              "description": "Comfortable and stylish hoodies for the entire family."
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "4",
+      "name": "Home & Furniture",
+      "subcategories": [
+        { "id": "sub23", "name": "Home Textile", "categoryId": "4" },
+        { "id": "sub24", "name": "Bedding", "categoryId": "4" },
+        { "id": "sub25", "name": "Pillows", "categoryId": "4" },
+        { "id": "sub26", "name": "Handkerchief Towels", "categoryId": "4" },
+        { "id": "sub27", "name": "Curtain", "categoryId": "4" }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Supermarket",
+      "subcategories": [
+        { "id": "sub28", "name": "Grocery Items", "categoryId": "5" },
+        { "id": "sub29", "name": "Household Products", "categoryId": "5" },
+        { "id": "sub30", "name": "Personal Care", "categoryId": "5" },
+        { "id": "sub31", "name": "Pet Supplies", "categoryId": "5" }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Cosmetics",
+      "subcategories": [
+        { "id": "sub32", "name": "Shampoo and Conditioner", "categoryId": "6" },
+        { "id": "sub33", "name": "Styling Products", "categoryId": "6" },
+        { "id": "sub34", "name": "Hair Accessories", "categoryId": "6" },
+        { "id": "sub35", "name": "Men's Grooming", "categoryId": "6" }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Shoe & Bag",
+      "subcategories": [
+        { "id": "sub36", "name": "Casual Shoes", "categoryId": "7" },
+        { "id": "sub37", "name": "Boots", "categoryId": "7" },
+        { "id": "sub38", "name": "Sandals", "categoryId": "7" },
+        { "id": "sub39", "name": "Slippers", "categoryId": "7" }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Electronic",
+      "subcategories": [
+        { "id": "sub40", "name": "Computers and Laptops", "categoryId": "8" },
+        { "id": "sub41", "name": "Smartphones", "categoryId": "8" },
+        { "id": "sub42", "name": "Tablets", "categoryId": "8" },
+        { "id": "sub43", "name": "Accessories", "categoryId": "8" },
+        { "id": "sub44", "name": "Audio Equipment", "categoryId": "8" },
+        { "id": "sub45", "name": "Cameras and Photography", "categoryId": "8" }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Sport & Outdoor",
+      "subcategories": [
+        { "id": "sub46", "name": "Team Sports Equipment", "categoryId": "9" },
+        { "id": "sub47", "name": "Water Sports Gear", "categoryId": "9" },
+        {
+          "id": "sub48",
+          "name": "Outdoor Recreation Supplies",
+          "categoryId": "9"
+        },
+        { "id": "sub49", "name": "Fitness Equipment", "categoryId": "9" }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Best seller",
+      "subcategories": []
+    }
+  ],
+  "allSubcategories": [
+    { "id": "sub1", "name": "Women's Clothing", "categoryId": "1" },
+    { "id": "sub2", "name": "T-Shirts and Tops", "categoryId": "1" },
+    { "id": "sub3", "name": "Dresses", "categoryId": "1" },
+    { "id": "sub4", "name": "Outerwear", "categoryId": "1" },
+    { "id": "sub5", "name": "Formal Wear", "categoryId": "1" },
+    { "id": "sub6", "name": "Casual Wear", "categoryId": "1" },
+    { "id": "sub7", "name": "Seasonal Collections", "categoryId": "1" },
+    { "id": "sub8", "name": "Sports Bras", "categoryId": "1" },
+    { "id": "sub9", "name": "Workout Tops", "categoryId": "1" },
+    { "id": "sub10", "name": "Fall Wardrobe", "categoryId": "1" },
+    { "id": "sub11", "name": "Men's Clothing", "categoryId": "2" },
+    { "id": "sub12", "name": "T-Shirts and Tops", "categoryId": "2" },
+    { "id": "sub13", "name": "Pants", "categoryId": "2" },
+    { "id": "sub14", "name": "Outerwear", "categoryId": "2" },
+    { "id": "sub15", "name": "Formal Wear", "categoryId": "2" },
+    { "id": "sub16", "name": "Casual Wear", "categoryId": "2" },
+    { "id": "sub17", "name": "Seasonal Collections", "categoryId": "2" },
+    { "id": "sub18", "name": "Sports Apparel", "categoryId": "2" },
+    { "id": "sub19", "name": "Maternity Wear", "categoryId": "3" },
+    { "id": "sub20", "name": "Children's Clothing", "categoryId": "3" },
+    { "id": "sub21", "name": "Baby Accessories", "categoryId": "3" },
+    { "id": "sub22", "name": "Family Matching Outfits", "categoryId": "3" },
+    { "id": "sub23", "name": "Home Textile", "categoryId": "4" },
+    { "id": "sub24", "name": "Bedding", "categoryId": "4" },
+    { "id": "sub25", "name": "Pillows", "categoryId": "4" },
+    { "id": "sub26", "name": "Handkerchief Towels", "categoryId": "4" },
+    { "id": "sub27", "name": "Curtain", "categoryId": "4" },
+    { "id": "sub28", "name": "Grocery Items", "categoryId": "5" },
+    { "id": "sub29", "name": "Household Products", "categoryId": "5" },
+    { "id": "sub30", "name": "Personal Care", "categoryId": "5" },
+    { "id": "sub31", "name": "Pet Supplies", "categoryId": "5" },
+    { "id": "sub32", "name": "Shampoo and Conditioner", "categoryId": "6" },
+    { "id": "sub33", "name": "Styling Products", "categoryId": "6" },
+    { "id": "sub34", "name": "Hair Accessories", "categoryId": "6" },
+    { "id": "sub35", "name": "Men's Grooming", "categoryId": "6" },
+    { "id": "sub36", "name": "Casual Shoes", "categoryId": "7" },
+    { "id": "sub37", "name": "Boots", "categoryId": "7" },
+    { "id": "sub38", "name": "Sandals", "categoryId": "7" },
+    { "id": "sub39", "name": "Slippers", "categoryId": "7" },
+    { "id": "sub40", "name": "Computers and Laptops", "categoryId": "8" },
+    { "id": "sub41", "name": "Smartphones", "categoryId": "8" },
+    { "id": "sub42", "name": "Tablets", "categoryId": "8" },
+    { "id": "sub43", "name": "Accessories", "categoryId": "8" },
+    { "id": "sub44", "name": "Audio Equipment", "categoryId": "8" },
+    { "id": "sub45", "name": "Cameras and Photography", "categoryId": "8" },
+    { "id": "sub46", "name": "Team Sports Equipment", "categoryId": "9" },
+    { "id": "sub47", "name": "Water Sports Gear", "categoryId": "9" },
+    {
+      "id": "sub48",
+      "name": "Outdoor Recreation Supplies",
+      "categoryId": "9"
+    },
+    { "id": "sub49", "name": "Fitness Equipment", "categoryId": "9" }
+  ]
+}

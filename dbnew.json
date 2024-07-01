@@ -1,0 +1,176 @@
+{
+  "categories": [],
+  "subcategories": [],
+  "products": [],
+  "disableCategories": [],
+  "disableSubcategories": [],
+  "allCategories": [
+    {
+      "id": "1",
+      "name": "Women",
+      "subcategories": [
+        { "id": "sub1", "name": "Women's Clothing", "categoryId": "1" },
+        { "id": "sub2", "name": "T-Shirts and Tops", "categoryId": "1" },
+        { "id": "sub3", "name": "Dresses", "categoryId": "1" },
+        { "id": "sub4", "name": "Outerwear", "categoryId": "1" },
+        { "id": "sub5", "name": "Formal Wear", "categoryId": "1" },
+        { "id": "sub6", "name": "Casual Wear", "categoryId": "1" },
+        { "id": "sub7", "name": "Seasonal Collections", "categoryId": "1" },
+        { "id": "sub8", "name": "Sports Bras", "categoryId": "1" },
+        { "id": "sub9", "name": "Workout Tops", "categoryId": "1" },
+        { "id": "sub10", "name": "Fall Wardrobe", "categoryId": "1" }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Male",
+      "subcategories": [
+        { "id": "sub11", "name": "Men's Clothing", "categoryId": "2" },
+        { "id": "sub12", "name": "T-Shirts and Tops", "categoryId": "2" },
+        { "id": "sub13", "name": "Pants", "categoryId": "2" },
+        { "id": "sub14", "name": "Outerwear", "categoryId": "2" },
+        { "id": "sub15", "name": "Formal Wear", "categoryId": "2" },
+        { "id": "sub16", "name": "Casual Wear", "categoryId": "2" },
+        { "id": "sub17", "name": "Seasonal Collections", "categoryId": "2" },
+        { "id": "sub18", "name": "Sports Apparel", "categoryId": "2" }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Mother-Child",
+      "subcategories": [
+        { "id": "sub19", "name": "Maternity Wear", "categoryId": "3" },
+        { "id": "sub20", "name": "Children's Clothing", "categoryId": "3" },
+        { "id": "sub21", "name": "Baby Accessories", "categoryId": "3" },
+        { "id": "sub22", "name": "Family Matching Outfits", "categoryId": "3" }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Home & Furniture",
+      "subcategories": [
+        { "id": "sub23", "name": "Home Textile", "categoryId": "4" },
+        { "id": "sub24", "name": "Bedding", "categoryId": "4" },
+        { "id": "sub25", "name": "Pillows", "categoryId": "4" },
+        { "id": "sub26", "name": "Handkerchief Towels", "categoryId": "4" },
+        { "id": "sub27", "name": "Curtain", "categoryId": "4" }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Supermarket",
+      "subcategories": [
+        { "id": "sub28", "name": "Grocery Items", "categoryId": "5" },
+        { "id": "sub29", "name": "Household Products", "categoryId": "5" },
+        { "id": "sub30", "name": "Personal Care", "categoryId": "5" },
+        { "id": "sub31", "name": "Pet Supplies", "categoryId": "5" }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Cosmetics",
+      "subcategories": [
+        { "id": "sub32", "name": "Shampoo and Conditioner", "categoryId": "6" },
+        { "id": "sub33", "name": "Styling Products", "categoryId": "6" },
+        { "id": "sub34", "name": "Hair Accessories", "categoryId": "6" },
+        { "id": "sub35", "name": "Men's Grooming", "categoryId": "6" }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Shoe & Bag",
+      "subcategories": [
+        { "id": "sub36", "name": "Casual Shoes", "categoryId": "7" },
+        { "id": "sub37", "name": "Boots", "categoryId": "7" },
+        { "id": "sub38", "name": "Sandals", "categoryId": "7" },
+        { "id": "sub39", "name": "Slippers", "categoryId": "7" }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Electronic",
+      "subcategories": [
+        { "id": "sub40", "name": "Computers and Laptops", "categoryId": "8" },
+        { "id": "sub41", "name": "Smartphones", "categoryId": "8" },
+        { "id": "sub42", "name": "Tablets", "categoryId": "8" },
+        { "id": "sub43", "name": "Accessories", "categoryId": "8" },
+        { "id": "sub44", "name": "Audio Equipment", "categoryId": "8" },
+        { "id": "sub45", "name": "Cameras and Photography", "categoryId": "8" }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Sport & Outdoor",
+      "subcategories": [
+        { "id": "sub46", "name": "Team Sports Equipment", "categoryId": "9" },
+        { "id": "sub47", "name": "Water Sports Gear", "categoryId": "9" },
+        {
+          "id": "sub48",
+          "name": "Outdoor Recreation Supplies",
+          "categoryId": "9"
+        },
+        { "id": "sub49", "name": "Fitness Equipment", "categoryId": "9" }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Best seller",
+      "subcategories": []
+    }
+  ],
+  "allSubcategories": [
+    { "id": "sub1", "name": "Women's Clothing", "categoryId": "1" },
+    { "id": "sub2", "name": "T-Shirts and Tops", "categoryId": "1" },
+    { "id": "sub3", "name": "Dresses", "categoryId": "1" },
+    { "id": "sub4", "name": "Outerwear", "categoryId": "1" },
+    { "id": "sub5", "name": "Formal Wear", "categoryId": "1" },
+    { "id": "sub6", "name": "Casual Wear", "categoryId": "1" },
+    { "id": "sub7", "name": "Seasonal Collections", "categoryId": "1" },
+    { "id": "sub8", "name": "Sports Bras", "categoryId": "1" },
+    { "id": "sub9", "name": "Workout Tops", "categoryId": "1" },
+    { "id": "sub10", "name": "Fall Wardrobe", "categoryId": "1" },
+    { "id": "sub11", "name": "Men's Clothing", "categoryId": "2" },
+    { "id": "sub12", "name": "T-Shirts and Tops", "categoryId": "2" },
+    { "id": "sub13", "name": "Pants", "categoryId": "2" },
+    { "id": "sub14", "name": "Outerwear", "categoryId": "2" },
+    { "id": "sub15", "name": "Formal Wear", "categoryId": "2" },
+    { "id": "sub16", "name": "Casual Wear", "categoryId": "2" },
+    { "id": "sub17", "name": "Seasonal Collections", "categoryId": "2" },
+    { "id": "sub18", "name": "Sports Apparel", "categoryId": "2" },
+    { "id": "sub19", "name": "Maternity Wear", "categoryId": "3" },
+    { "id": "sub20", "name": "Children's Clothing", "categoryId": "3" },
+    { "id": "sub21", "name": "Baby Accessories", "categoryId": "3" },
+    { "id": "sub22", "name": "Family Matching Outfits", "categoryId": "3" },
+    { "id": "sub23", "name": "Home Textile", "categoryId": "4" },
+    { "id": "sub24", "name": "Bedding", "categoryId": "4" },
+    { "id": "sub25", "name": "Pillows", "categoryId": "4" },
+    { "id": "sub26", "name": "Handkerchief Towels", "categoryId": "4" },
+    { "id": "sub27", "name": "Curtain", "categoryId": "4" },
+    { "id": "sub28", "name": "Grocery Items", "categoryId": "5" },
+    { "id": "sub29", "name": "Household Products", "categoryId": "5" },
+    { "id": "sub30", "name": "Personal Care", "categoryId": "5" },
+    { "id": "sub31", "name": "Pet Supplies", "categoryId": "5" },
+    { "id": "sub32", "name": "Shampoo and Conditioner", "categoryId": "6" },
+    { "id": "sub33", "name": "Styling Products", "categoryId": "6" },
+    { "id": "sub34", "name": "Hair Accessories", "categoryId": "6" },
+    { "id": "sub35", "name": "Men's Grooming", "categoryId": "6" },
+    { "id": "sub36", "name": "Casual Shoes", "categoryId": "7" },
+    { "id": "sub37", "name": "Boots", "categoryId": "7" },
+    { "id": "sub38", "name": "Sandals", "categoryId": "7" },
+    { "id": "sub39", "name": "Slippers", "categoryId": "7" },
+    { "id": "sub40", "name": "Computers and Laptops", "categoryId": "8" },
+    { "id": "sub41", "name": "Smartphones", "categoryId": "8" },
+    { "id": "sub42", "name": "Tablets", "categoryId": "8" },
+    { "id": "sub43", "name": "Accessories", "categoryId": "8" },
+    { "id": "sub44", "name": "Audio Equipment", "categoryId": "8" },
+    { "id": "sub45", "name": "Cameras and Photography", "categoryId": "8" },
+    { "id": "sub46", "name": "Team Sports Equipment", "categoryId": "9" },
+    { "id": "sub47", "name": "Water Sports Gear", "categoryId": "9" },
+    {
+      "id": "sub48",
+      "name": "Outdoor Recreation Supplies",
+      "categoryId": "9"
+    },
+    { "id": "sub49", "name": "Fitness Equipment", "categoryId": "9" }
+  ]
+}

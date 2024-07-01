@@ -1,0 +1,246 @@
+<template>
+  <div class="container-fluid px-0 py-2">
+    <div class="card cover rounded-0 border-0 mb-3">
+      <img
+        src="../../../../assets/image/profile-cover.jpg"
+        class="card-img border-0"
+        style="max-height: 162px; object-fit: cover"
+      />
+      <div class="mt-2 card-img-overlay rounded-0">
+        <h3 class="">Women</h3>
+        <p class="mb-4 text-secondary">
+          Welcome to the Luminae Admin Dashboard. Effortlessly manage all
+          women's products, from clothing to accessories.
+        </p>
+      </div>
+    </div>
+
+    <div class="container mb-3">
+      <div class="row d-flex justify-content-end">
+        <button
+          type="button"
+          class="btn btn-primary me-3 border-0 py-2"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          style="width: 200px; background: #6b5ef0"
+        >
+          + New Subcategory
+        </button>
+
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Add Subcategory
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form @submit.prevent="SubcategoryForm">
+                  <div class="mb-3">
+                    <label for="subcategory_category" class="form-label"
+                      >Category Name:</label
+                    >
+                    <select
+                      id="subcategory_category"
+                      class="form-select"
+                      v-model="newSubcategory.categoryId"
+                      required
+                    >
+                      <option disabled value="">Select Category</option>
+                      <option
+                        v-for="category in categories"
+                        :key="category.id"
+                        :value="category.id"
+                      >
+                        {{ category.name }}
+                      </option>
+                    </select>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="subcategory_name" class="col-form-label"
+                      >Subcategory Name:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="subcategory_name"
+                      v-model="newSubcategory.name"
+                    />
+                  </div>
+                  <div class="modal-footer border-0">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row column-container m-0 p-0 mb-5">
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Subcategory Name</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Disable</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr
+            v-for="(subcategory, index) in subcategories"
+            :key="subcategory.id"
+          >
+            <th scope="row">{{ index + 1 }}</th>
+            <td>
+              <router-link to="/admin/home" class="text-decoration-none">
+                {{ subcategory.name }}
+              </router-link>
+            </td>
+
+            <td>
+              <button
+                @click="editCategory"
+                type="button"
+                class="btn btn-warning"
+              >
+                Edit
+              </button>
+            </td>
+            <td>
+              <button
+                @click="disableCategory"
+                type="button"
+                class="btn btn-danger"
+              >
+                Disable
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</template>
+
+<script>
+  import axios from "axios";
+  import Swal from "sweetalert2";
+
+  export default {
+    props: ["categories"],
+    data() {
+      return {
+        newSubcategory: {
+          name: "",
+          categoryId: "",
+        },
+        subcategories: [],
+      };
+    },
+    methods: {
+      async fetchData() {
+        try {
+          const res = await axios.get(
+            `http://localhost:3000/subcategories?categoryId=Category/1719162574287/`
+          );
+          this.subcategories = res.data;
+          console.log(`Fetched subcategories: ${this.subcategories}`);
+        } catch (err) {
+          console.error(`Error fetching data: ${err}`);
+        }
+      },
+
+      async SubcategoryForm() {
+        const subcategoryId = `subcategory${Date.now()}`;
+
+        try {
+          const newSubcategory = {
+            id: subcategoryId,
+            name: this.newSubcategory.name,
+            categoryId: this.newSubcategory.categoryId,
+            route: `/admin/subcategory/${this.newSubcategory.name
+              .toLowerCase()
+              .replace(/\s+/g, "-")}`,
+          };
+
+          await axios.post(
+            "http://localhost:3000/subcategories",
+            newSubcategory
+          );
+
+          const category = this.categories.find(
+            (category) => category.id === this.newSubcategory.categoryId
+          );
+
+          console.log(`Category: ${this.newSubcategory.categoryId}`);
+
+          if (category) {
+            // Add the subcategory to the category's subcategories array
+            if (!category.subcategories) {
+              category.subcategories = [];
+            }
+            category.subcategories.push(newSubcategory);
+
+            // Update the category in the database
+            await axios.patch(
+              `http://localhost:3000/categories/${category.id}`,
+              {
+                subcategories: category.subcategories,
+              }
+            );
+          }
+
+          Swal.fire({
+            icon: "success",
+            title: "Success",
+            text: "Subcategory added successfully!",
+          }).then(() => {
+            this.l();
+            this.newSubcategory = {
+              name: "",
+              categoryId: "",
+            };
+          });
+        } catch (error) {
+          console.error("Error adding subcategory:", error);
+          Swal.fire({
+            icon: "error",
+            title: "Error",
+            text: "An error occurred while adding the subcategory.",
+          });
+        }
+      },
+    },
+    mounted() {
+      this.fetchData();
+    },
+  };
+</script>
+
+<style scoped></style>
