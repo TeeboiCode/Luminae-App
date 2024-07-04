@@ -1,10 +1,8 @@
 <template>
-  <div class="container-fluid m-0 p-0 d-none" style="height: 74px">
-    <div class="row m-0 p-0 py-3 h-100" style="background: #262626">
-      <div
-        class="col-lg-4 col-md-6 h-100 my-auto d-flex justify-content-center"
-        style="border-right: 1px solid #7b7b7b"
-      >
+  <div class="container-fluid m-0 p-0 d-none d-sm-block" style="height: 74px">
+    <div class="row m-0 p-0 -h-100 py-3" style="background: #262626">
+      <!-- col 1 -->
+      <div class="col-lg-4 col-sm-6 d-flex justify-content-center">
         <div class="allCat d-flex align-items-center">
           <img
             src="../../../assets/categories icon.png"
@@ -35,28 +33,76 @@
           </div>
         </div>
       </div>
+      <!-- col 2 -->
       <div
-        class="col-lg-4 d-none d-lg-flex h-100 my-auto d-flex justify-content-center align-items-center"
-        style="border-right: 1px solid #7b7b7b"
+        class="col-lg-4 d-none d-lg-flex justify-content-center align-items-center"
+        style="border-right: 1px solid #7b7b7b; border-left: 1px solid #7b7b7b"
       >
-        <div style="width: 63px; height: 62px">
-          <img
-            src="../../../assets/image/Men cosmetic.png"
-            class="w-100 object-fit-cover"
-          />
-        </div>
-        <div class="ms-2">
-          <p class="fw-bold text-white m-0" style="font-size: 12px">
-            Weekly Men's Toiletries Coupons.
-          </p>
-          <p class="m-0" style="color: #c4c4c4; font-size: 12px">
-            We extend exclusive discounts to our male clientele
-          </p>
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex align-items-center">
+                <div style="width: 63px">
+                  <img
+                    src="../../../assets/image/Men cosmetic.png"
+                    class="w-100 object-fit-cover"
+                  />
+                </div>
+                <div class="ms-2">
+                  <p class="fw-bold text-white m-0" style="font-size: 12px">
+                    Weekly Men's Toiletries Coupons.
+                  </p>
+                  <p class="m-0" style="color: #c4c4c4; font-size: 12px">
+                    We extend exclusive discounts to our male clientele
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex align-items-center">
+                <div style="width: 63px">
+                  <img
+                    src="../../../assets/image/Men cosmetic.png"
+                    class="w-100 object-fit-cover"
+                  />
+                </div>
+                <div class="ms-2">
+                  <p class="fw-bold text-white m-0" style="font-size: 12px">
+                    Weekly Men's Toiletries Coupons.
+                  </p>
+                  <p class="m-0" style="color: #c4c4c4; font-size: 12px">
+                    We extend exclusive discounts to our male clientele
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex align-items-center">
+                <div style="width: 63px">
+                  <img
+                    src="../../../assets/image/Men cosmetic.png"
+                    class="w-100 object-fit-cover"
+                  />
+                </div>
+                <div class="ms-2">
+                  <p class="fw-bold text-white m-0" style="font-size: 12px">
+                    Weekly Men's Toiletries Coupons.
+                  </p>
+                  <p class="m-0" style="color: #c4c4c4; font-size: 12px">
+                    We extend exclusive discounts to our male clientele
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div
-        class="col-lg-4 col-md-6 h-100 my-auto d-flex justify-content-center"
-      >
+      <!-- col 3 -->
+      <div class="col-lg-4 col-sm-6 d-flex justify-content-center">
         <ul
           class="d-flex align-items-center justify-content-between m-0 p-0"
           style="width: 350px"
@@ -82,6 +128,18 @@
       </div>
     </div>
   </div>
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!-- <div>
+    <div style="width: 63px">
+
+      
+
+
+
+          
+  </div> -->
 </template>
 
 <script>

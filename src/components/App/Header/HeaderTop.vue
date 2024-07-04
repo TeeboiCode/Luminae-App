@@ -1,22 +1,27 @@
 <template>
-  <nav class="navbar navbar-expand-sm bg-body-tertiary p-0">
-    <div class="container-fluid container-fluid-all">
-      <div class="row p-0 m-0 w-100">
-        <div class="d-sm-flex col-md-12 col-lg-4 w-100 p-0">
-          <div class="mv d-flex align-items-center justify-content-between">
-            <!-- toggler icon start -->
+  <nav class="navbar navbar-expand-sm bg-body-tertiary p-0 m-0">
+    <div class="container-fluid d-sm-block p-3 p-sm-0 pb-sm-2 mx-sm-4 m-0">
+      <!-- desktop view start -->
+      <div class="row align-items-center">
+        <!-- Mobile View start -->
+        <div
+          class="Mobile View col-lg-6 col-12 py-3 d-sm-flex align-items-center justify-content-between"
+        >
+          <!-- MV Navbar Start -->
+          <div class="w-100 d-flex align-items-center justify-content-between">
+            <!-- Menu btn start -->
             <button
               class="navbar-toggler p-0 border-0"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#navbarTogglerDemo01"
-              aria-controls="navbarTogglerDemo01"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- toggler icon end -->
+            <!-- Menu btn end -->
 
             <!-- logo start -->
             <router-link
@@ -28,7 +33,7 @@
             </router-link>
             <!-- logo end -->
 
-            <!-- badge icon mobile  -->
+            <!-- badge icon mobile start -->
             <div class="badge-icon d-sm-none">
               <img src="../../../assets/bag-icon.png" width="24" height="24" />
               <span
@@ -37,7 +42,9 @@
                 >3</span
               >
             </div>
+            <!-- badge icon mobile end -->
           </div>
+          <!-- MV Navbar end -->
 
           <!-- search-container start -->
           <div class="search-container border mt-2 rounded d-block w-100">
@@ -88,45 +95,104 @@
           </div>
           <!-- search-container end -->
         </div>
-      </div>
 
-      <!-- navbar collapse -->
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <!--nav-link start  -->
-        <div class="row p-0 m-0 w-100">
-          <div
-            class="d-flex align-items-center justify-content-between w-100 d-none"
-          >
-            <ul
-              class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-between"
-              style="max-width: 420px; margin-right: 55px"
-            >
-              <li class="nav-item">
-                <a class="nav-link p-0" href="#">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link p-0" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link p-0" href="#">Contact us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link p-0" href="#">Help & support</a>
-              </li>
-            </ul>
-            <!--nav-link end  -->
+        <!-- Mobile View end -->
 
-            <div
-              class="nav-icon w-100 d-flex justify-content-between align-items-center"
-              style="max-width: 80px"
-            >
-              <i class="bx bxl-instagram-alt"></i>
-              <i class="bx bxl-facebook"></i>
-              <i class="bx bxl-telegram"></i>
+        <div class="col-lg-6">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- links container start -->
+            <div class="links w-100">
+              <div
+                class="row p-0 m-0 align-items-center justify-content-between"
+              >
+                <!-- links items start -->
+                <div class="col-sm-8">
+                  <!-- menu display tablet -->
+                  <ul
+                    class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center justify-content-between d-none d-sm-flex"
+                  >
+                    <li class="nav-item">
+                      <router-link class="nav-link p-0" to="#"
+                        >About us</router-link
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <router-link class="nav-link p-0" to="#"
+                        >Blog</router-link
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <router-link class="nav-link p-0" to="#"
+                        >Contact us</router-link
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <router-link class="nav-link p-0" to="#"
+                        >Help & support</router-link
+                      >
+                    </li>
+                  </ul>
+
+                  <!-- menu display mobile -->
+                  <ul class="navbar-nav d-flex d-sm-none g-2 fw-bold">
+                    <li class="nav-item">
+                      <router-link class="nav-link p-0 mb-3" to="#"
+                        >Luminae</router-link
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <router-link class="nav-link p-0 mb-3" to="#"
+                        >Clothes</router-link
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <router-link class="nav-link p-0 mb-3" to="#"
+                        >Electronics</router-link
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <router-link class="nav-link p-0 mb-3" to="#"
+                        >About us</router-link
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <router-link class="nav-link p-0 mb-3" to="#"
+                        >Cards</router-link
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <router-link class="nav-link p-0 mb-3" to="#"
+                        >Sign Up</router-link
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <router-link class="nav-link p-0 mb-3" to="#"
+                        >Sign in</router-link
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- links items end -->
+
+                <!-- social-icons start -->
+                <div class="col-sm-4 d-flex justify-content-end">
+                  <div
+                    class="nav-icon w-100 justify-content-between align-items-center d-none d-sm-flex"
+                    style="max-width: 80px"
+                  >
+                    <i class="bx bxl-instagram-alt"></i>
+                    <i class="bx bxl-facebook"></i>
+                    <i class="bx bxl-telegram"></i>
+                  </div>
+                </div>
+                <!-- social-icons end -->
+              </div>
             </div>
+            <!-- links container end -->
           </div>
         </div>
       </div>
+      <!-- desktop view end -->
     </div>
   </nav>
 </template>
@@ -139,17 +205,14 @@ export default {};
 .navbar-toggler:focus {
   box-shadow: none;
 }
-.form-control::placeholder {
-  color: #9d9d9d;
-}
-.form-control:focus {
-  box-shadow: none;
-}
 .nav-icon i.bx {
   font-size: 1.5rem;
   color: #c4c4c4;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+.form-control::placeholder {
+  color: #9d9d9d;
 }
 
 .nav-link:hover,
@@ -161,20 +224,13 @@ export default {};
   transition: all 0.3s ease;
   color: #555;
 }
-
-@media (max-width: 575.98px) {
-  .container-fluid-all {
-    padding: 32px 20px;
-  }
+@media (max-width: 576px) {
   .navbar-brand img {
     width: 40px;
     height: 27px;
   }
   .navbar-brand p {
     font-size: 27px;
-  }
-  .mv {
-    width: 100%;
   }
 }
 
