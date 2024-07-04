@@ -3,7 +3,6 @@
     <HeaderTop />
     <HeaderButtom />
   </div>
-  <h3>Header</h3>
 </template>
 
 <script>
